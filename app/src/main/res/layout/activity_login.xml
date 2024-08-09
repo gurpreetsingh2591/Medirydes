@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/_25sdp"
+                android:src="@drawable/logo" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvLoginCredantial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:elevation="@dimen/_10sdp"
+                android:visibility="gone"
+                app:cardCornerRadius="@dimen/_20sdp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_20sdp">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edtEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:backgroundTint="@color/app_base_color"
+                            android:drawableStart="@drawable/mail_icon"
+                            android:fontFamily="@font/poppins_medium"
+                            android:hint="@string/email"
+                            android:textColorHint="@color/hint_color"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_11sdp"
+                            tools:ignore="RtlSymmetry">
+
+                        </androidx.appcompat.widget.AppCompatEditText>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_45sdp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:drawablePadding="@dimen/_5sdp"
+                            android:id="@+id/edtPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:backgroundTint="@color/app_base_color"
+                            android:drawableStart="@drawable/drawable_icon"
+                            android:fontFamily="@font/roboto_regular"
+                            android:hint="@string/password"
+                            android:textColorHint="@color/hint_color"
+                            android:textColor="@color/black"
+                            android:imeOptions="actionDone"
+                            android:inputType="textPassword"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="@dimen/_11sdp"
+                            tools:ignore="RtlSymmetry" />
+                    </RelativeLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogin"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_55sdp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/app_base_color"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/login"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        app:cornerRadius="@dimen/_10sdp"
+                        app:rippleColor="@color/hint_text_color" />
+
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_20sdp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/forgot_password" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvCompanyCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp"
+                android:elevation="@dimen/_10sdp"
+                app:cardCornerRadius="@dimen/_20sdp">
+
+                <LinearLayout
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/_20sdp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_20sdp">
+
+                        <androidx.appcompat.widget.AppCompatEditText
+                            android:id="@+id/edtCompanyCode"
+                            android:layout_width="match_parent"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/app_base_color"
+                            android:drawableStart="@drawable/mail_icon"
+                            android:fontFamily="@font/poppins_medium"
+                            android:hint="@string/enter_company_code"
+                            android:textColorHint="@color/hint_color"
+                            android:textColor="@color/black"
+                            android:paddingEnd="10dp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/_11sdp"
+                            tools:ignore="RtlSymmetry">
+
+                        </androidx.appcompat.widget.AppCompatEditText>
+
+                    </RelativeLayout>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnCodeConfirm"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_55sdp"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="@color/app_base_color"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/confirm"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        app:cornerRadius="@dimen/_10sdp"
+                        app:rippleColor="@color/hint_text_color" />
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/content_loading" />
+</RelativeLayout>

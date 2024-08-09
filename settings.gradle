@@ -1,0 +1,3 @@
+include ':cosmocalendar'
+include ':app'
+rootProject.name = "MediRydes"

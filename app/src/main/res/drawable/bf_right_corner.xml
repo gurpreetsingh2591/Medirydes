@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="@dimen/_30sdp"
+        android:height="@dimen/_30sdp">
+        <shape android:shape="rectangle">
+            <size android:height="50dp" />
+            <solid android:color="@color/app_base_color" />
+            <corners android:bottomLeftRadius="@dimen/_50sdp"
+
+
+                />
+        </shape>
+    </item>
+
+</layer-list>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<layer-list xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--    <item >-->
+    <!--        <shape>-->
+    <!--            <size android:height="50dp" />-->
+    <!--            <solid android:color="@android:color/transparent" />-->
+    <!--        </shape>-->
+    <!--    </item>-->
+
+    <!--    <item android:gravity="top">-->
+    <!--        <shape>-->
+    <!--            <size android:height="50dp" />-->
+    <!--            <solid android:color="@color/app_base_color" />-->
+
+    <!--        </shape>-->
+    <!--    </item>-->
+    <!--    <item android:gravity="top">-->
+    <!--        <shape>-->
+    <!--            <size android:height="50dp" />-->
+    <!--            <solid android:color="@android:color/transparent" />-->
+    <!--            <corners-->
+    <!--                android:topLeftRadius="@dimen/_50sdp"-->
+    <!--                android:topRightRadius="@dimen/_50sdp" />-->
+    <!--        </shape>-->
+    <!--    </item>-->
+    <!--</layer-list>-->

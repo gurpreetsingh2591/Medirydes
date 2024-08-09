@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/in_toll"
+            layout="@layout/tab_bar" />
+
+        <LinearLayout
+            android:id="@+id/fragment_container_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/in_toll"
+            android:layout_marginTop="-110dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llTitle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/_20sdp">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/notifications"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_white_corner">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    android:paddingTop="@dimen/_30sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/_20sdp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:elevation="@dimen/_10sdp"
+                            android:minHeight="@dimen/_80sdp"
+                            app:cardCornerRadius="@dimen/_10sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="@dimen/_20sdp">
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="@dimen/_60sdp"
+                                        android:layout_height="@dimen/_60sdp"
+                                        android:background="@drawable/bg_circular"
+                                        app:civ_border_color="@color/app_base_color"
+                                        app:civ_border_width="2dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="AB"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_14sdp" />
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:paddingVertical="@dimen/_10sdp"
+                                    android:paddingStart="@dimen/_10sdp">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="10:00 AM"
+                                        android:singleLine="true"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:textColor="@color/hint_text_color" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_5sdp"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="lorem ipsum dolar sit amit"
+                                        android:textColor="@color/black"
+                                        android:singleLine="true"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        android:text="lorem ipsum dolar sit amit"
+                                        android:textColor="@color/hint_text_color"
+                                        android:textSize="@dimen/_10sdp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_20sdp"
+                            android:elevation="@dimen/_10sdp"
+                            android:minHeight="@dimen/_80sdp"
+                            app:cardCornerRadius="@dimen/_10sdp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="@dimen/_20sdp">
+
+                                <FrameLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+
+                                    <de.hdodenhof.circleimageview.CircleImageView
+                                        android:layout_width="@dimen/_60sdp"
+                                        android:layout_height="@dimen/_60sdp"
+                                        android:background="@drawable/bg_circular"
+                                        app:civ_border_color="@color/app_base_color"
+                                        app:civ_border_width="2dp" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="AB"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/_14sdp" />
+                                </FrameLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:paddingVertical="@dimen/_10sdp"
+                                    android:paddingStart="@dimen/_10sdp">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="10:00 AM"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:textColor="@color/hint_text_color" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        android:text="lorem ipsum dolar sit amit"
+                                        android:textColor="@color/black"
+                                        android:singleLine="true"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:textSize="@dimen/_11sdp" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins_regular"
+                                        android:layout_marginTop="@dimen/_3sdp"
+                                        android:text="lorem ipsum dolar sit amit,lorem ipsum dolar sit amit"
+                                        android:textColor="@color/hint_text_color"
+                                        android:textSize="@dimen/_10sdp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="@string/no_notifications"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_16sdp"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

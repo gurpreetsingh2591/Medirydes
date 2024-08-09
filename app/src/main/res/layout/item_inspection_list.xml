@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/service_breaks"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp" />
+
+    <LinearLayout
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rgInspection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_selector_"
+            android:checkedButton="@+id/offer"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbYes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_left"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/yes"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/rbNo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_right"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/no"
+                android:textColor="@color/black" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>
